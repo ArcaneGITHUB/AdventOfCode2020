@@ -10,5 +10,4 @@ with open("input.txt", "r") as input_file:
 wire_map = np.full((10000, 10000), 0)
 print(type(wire_map))
 
-twodarraytest = np.array([[1, 2, 3], [4, 5, 6]])
-print(twodarraytest[0:2])
+print(wire_map.size)
