@@ -34,11 +34,9 @@ def manhattan_distance(point_one, point_two):
 wire_one = plot(wire_one)
 wire_two = plot(wire_two)
 
-lowest_distance = 0
+lowest_distance = 999999999999999
 for point in set(wire_one).intersection(wire_two):
     distance = manhattan_distance((0, 0), point)
-    if lowest_distance == 0:
-        lowest_distance = distance
-    elif distance < lowest_distance:
+    if distance < lowest_distance:
         lowest_distance = distance
 print(lowest_distance)
