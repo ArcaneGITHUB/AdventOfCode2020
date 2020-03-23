@@ -1,7 +1,0 @@
-1, 5, 6, 10
-1   -   Add numbers in slots 5&6 and place the result in slot 10
-
-2, 5, 6, 10
-2   -   Multiplies numbers in slots 5&6 and places the result in slot 10
-
-When finished processing an instruction, mvoe forward 4 positions to get the next
