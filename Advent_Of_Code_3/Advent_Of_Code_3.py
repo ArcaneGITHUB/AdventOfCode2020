@@ -5,6 +5,7 @@ with open("input.txt", "r") as input_file:
     wire_two = wires[1].split(",")
 
 
+# Takes vectors from a list and returns a list of all co-ordinates covered by these vectors.
 def plot(wire):
     coordinate_list = []
     current_location = (0, 0)
@@ -34,6 +35,7 @@ def manhattan_distance(point_one, point_two):
 wire_one = plot(wire_one)
 wire_two = plot(wire_two)
 
+# Finds the lowest manhattan distance of all the wire intersections and prints the lowest.
 lowest_distance = 0
 for point in set(wire_one).intersection(wire_two):
     distance = manhattan_distance((0, 0), point)
