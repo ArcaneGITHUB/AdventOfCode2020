@@ -1,4 +1,5 @@
 
+# Takes input and formats it into wires with separated vectors.
 with open("input.txt", "r") as input_file:
     wires = input_file.read().splitlines()
     wire_one = wires[0].split(",")
