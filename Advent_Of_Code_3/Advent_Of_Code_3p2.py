@@ -33,6 +33,14 @@ def manhattan_distance(point_one, point_two):
     return abs(point_two[0] - point_one[0]) + abs(point_two[1] - point_one[1])
 
 
+def wire_distance(plotted_wire, point):
+    steps = 0
+    for coordinate in plotted_wire:
+        steps += 1
+        if coordinate == point:
+            return steps
+
+
 wire_one = plot(wire_one)
 wire_two = plot(wire_two)
 
@@ -44,4 +52,13 @@ for point in set(wire_one).intersection(wire_two):
         lowest_distance = distance
     elif distance < lowest_distance:
         lowest_distance = distance
-print(lowest_distance)
+print("Lowest manhattan distance: " + str(lowest_distance))
+
+lowest_distance = 0
+for point in set(wire_one).intersection(wire_two):
+    distance = wire_distance(wire_one, point) + wire_distance(wire_two, point)
+    if lowest_distance == 0:
+        lowest_distance = distance
+    elif distance < lowest_distance:
+        lowest_distance = distance
+print("Lowest wire distance: " + str(lowest_distance))
