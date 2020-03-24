@@ -1,3 +1,8 @@
+# Advent of Code day 1
+#
+# David Corcoran
+# Pycharm
+# Python 3.7.4
 
 
 def fuel_requirement(mass):

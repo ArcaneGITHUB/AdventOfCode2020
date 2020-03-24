@@ -1,3 +1,8 @@
+# Advent of Code day 3
+#
+# David Corcoran
+# Pycharm
+# Python 3.7.4
 
 # Takes input and formats it into wires with separated vectors.
 with open("input.txt", "r") as input_file:
