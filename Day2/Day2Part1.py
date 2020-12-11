@@ -1,3 +1,8 @@
+# https://adventofcode.com/2020/day/1
+# Validate passwords from a list based on the conditions given with each password.
+# Example: 3-4 j: tjjj
+# Password must contain between 3 and 4 "j"s, password listed after colon.
+
 with open("input.txt", "r") as input_file:
     correct_passwords = 0
 

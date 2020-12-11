@@ -1,3 +1,6 @@
+# https://adventofcode.com/2020/day/1
+# Find two entries from a list of numbers that sum to 2020, then multiply those together and output.
+
 sum_goal = 2020
 
 with open("input.txt", "r") as input_file:

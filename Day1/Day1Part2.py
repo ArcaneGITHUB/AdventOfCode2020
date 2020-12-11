@@ -1,11 +1,13 @@
+# https://adventofcode.com/2020/day/1
+# Find three entries from a list of numbers that sum to 2020, then multiply those together and output.
+
 sum_goal = 2020
 
-with open("input.txt", "r", encoding="utf-8") as input_file:
+with open("input.txt", "r") as input_file:
     input_list = [int(num) for num in input_file.read().splitlines()]     # Convert strings to ints
-    input_list.sort()
 
     success = False
-    while not success:
+    while not success and input_list:
         num = input_list.pop(0)
         for second_num in input_list:
             sum = num + second_num
