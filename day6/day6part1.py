@@ -10,7 +10,6 @@ with open("input.txt", "r") as groups:
     for group in groups:
         group_answers = set()
         for person in group.split():
-            person = person.strip()
             for answer in person:
                 group_answers.add(answer)
         total_answers.append(len(group_answers))
