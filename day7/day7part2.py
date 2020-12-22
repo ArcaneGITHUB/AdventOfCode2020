@@ -21,11 +21,13 @@ def add_children(parent_bag):
 
 
 with open("input.txt", "r") as bags:
-    bags_dict = {}
-    for bag in bags.read().split(".\n")[:-1]:
-        bag = bag.replace(" bags", "").replace(" bag", "")  # Remove unnecessary text
-        bag = bag.split("contain ")
-        bags_dict[bag[0].strip()] = bag[1].split(", ")
-    children_count = {}
-    add_children("shiny gold")
-    print(sum(children_count.values()))
+    bags = bags.read().split(".\n")[:-1]
+
+bags_dict = {}
+for bag in bags:
+    bag = bag.replace(" bags", "").replace(" bag", "")  # Remove unnecessary text
+    bag = bag.split("contain ")
+    bags_dict[bag[0].strip()] = bag[1]
+children_count = {}
+add_children("shiny gold")
+print(sum(children_count.values()))

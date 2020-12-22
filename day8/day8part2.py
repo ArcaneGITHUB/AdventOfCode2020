@@ -28,13 +28,13 @@ def run_bootcode(bootcode):
 
 with open("input.txt", "r") as instruction_file:
     instruction_list = [line.strip() for line in instruction_file]
-    instruction_list = [instruction.split() for instruction in instruction_list]
+instruction_list = [instruction.split() for instruction in instruction_list]
 
-    for reverse_position in range(len(instruction_list)-1, 0, -1):
-        instruction = instruction_list[reverse_position][0]
-        instruction_list_copy = copy.deepcopy(instruction_list)
-        if instruction == "jmp":
-            instruction_list_copy[reverse_position][0] = "nop"
-        elif instruction == "nop":
-            instruction_list_copy[reverse_position][0] = "jmp"
-        run_bootcode(instruction_list_copy)
+for reverse_position in range(len(instruction_list)-1, 0, -1):
+    instruction = instruction_list[reverse_position][0]
+    instruction_list_copy = copy.deepcopy(instruction_list)
+    if instruction == "jmp":
+        instruction_list_copy[reverse_position][0] = "nop"
+    elif instruction == "nop":
+        instruction_list_copy[reverse_position][0] = "jmp"
+    run_bootcode(instruction_list_copy)

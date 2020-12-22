@@ -13,11 +13,13 @@ def find_parents(child_bag):
 
 
 with open("input.txt", "r") as bags:
-    bags_dict = {}
-    for bag in bags.read().split(".\n")[:-1]:
-        bag = bag.replace(" bags", "").replace(" bag", "")  # Remove unnecessary text
-        bag = bag.split("contain ")
-        bags_dict[bag[0].strip()] = bag[1]
-    confirmed_bags = set()
-    find_parents("shiny gold")
-    print("Total: ", len(confirmed_bags))
+    bags = bags.read().split(".\n")[:-1]
+
+bags_dict = {}
+for bag in bags:
+    bag = bag.replace(" bags", "").replace(" bag", "")  # Remove unnecessary text
+    bag = bag.split("contain ")
+    bags_dict[bag[0].strip()] = bag[1]
+confirmed_bags = set()
+find_parents("shiny gold")
+print("Total: ", len(confirmed_bags))

@@ -6,12 +6,12 @@ from functools import reduce
 
 with open("input.txt", "r") as groups:
     groups = groups.read().split("\n\n")
-    total_answers = []
-    for group in groups:
-        group_answers = set()
-        for person in group.split():
-            for answer in person:
-                group_answers.add(answer)
-        total_answers.append(len(group_answers))
-    total_answers = reduce(lambda a, b: a + b, total_answers)
-    print(total_answers)
+total_answers = []
+for group in groups:
+    group_answers = set()
+    for person in group.split():
+        for answer in person:
+            group_answers.add(answer)
+    total_answers.append(len(group_answers))
+total_answers = reduce(lambda a, b: a + b, total_answers)
+print(total_answers)

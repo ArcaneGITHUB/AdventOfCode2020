@@ -46,12 +46,12 @@ def validate_fields(passport):
 
 with open("input.txt", "r") as input_file:
     passport_list = input_file.read().split("\n\n")
-    valid_passports = 0
+valid_passports = 0
 
-    for passport in tuple(passport_list):
-        fields = passport.count(":")
-        if fields == 8 or (fields == 7 and "cid" not in passport):
-            if validate_fields(passport):
-                valid_passports += 1
+for passport in tuple(passport_list):
+    fields = passport.count(":")
+    if fields == 8 or (fields == 7 and "cid" not in passport):
+        if validate_fields(passport):
+            valid_passports += 1
 
-    print(valid_passports)
+print(valid_passports)
