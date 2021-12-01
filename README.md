@@ -1,6 +1,16 @@
-# AdventOfCode2020
+# Advent Of Code
+https://adventofcode.com/
+Previously my attempt at Advent of code 2020, now stores all my Advent of Code attemps.
+
+## Advent of Code 2021
+https://adventofcode.com/2021/
+
+## Advent of Code 2020
 https://adventofcode.com/2020/
-My attempt at Advent of Code 2020.
-Each day-rectory includes:
-- a file for each part w/ short explanation of the task
-- the input file
+
+Days 1-11
+
+## Advent of Code 2019
+https://adventofcode.com/2019
+
+Days 1-4
