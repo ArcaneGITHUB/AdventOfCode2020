@@ -1,0 +1,6 @@
+pyvenv.cfg
+.idea/
+lib/
+Scripts/
+include/
+.gitignore
