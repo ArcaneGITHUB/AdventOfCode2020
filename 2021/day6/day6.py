@@ -5,9 +5,6 @@
 
 
 # Input ages
-from typing import List
-
-
 def input_ages():
     with open("input", "r") as input_file:
         fish_ages = [int(age) for age in input_file.read().strip().split(",")]
