@@ -34,21 +34,6 @@ def validate_line(line):
     return stack
 
 
-# # Takes a list of unmatched openers and returns the score of the matching closers
-# def get_closers_score(openers_list):
-#     score = 0
-#     char_score_dict = {
-#         '(': 1,
-#         '[': 2,
-#         '{': 3,
-#         '<': 4
-#     }
-#     for closer in reversed(openers_list):
-#         score *= 5
-#         score += char_score_dict[closer]
-#     return score
-
-
 # For each line in a list, find the first corrupt character, if any.
 # Return the sum of the "scores" of all corrupt characters.
 def part_one():
