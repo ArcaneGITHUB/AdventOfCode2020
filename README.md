@@ -1,5 +1,5 @@
 # Advent Of Code
-Previously my attempt at Advent of code 2020, now stores all my Advent of Code attempts.  
+Stores all of my Advent of Code attempts.  
 https://adventofcode.com/  
 
 ## Advent of Code 2021
