@@ -3,7 +3,7 @@ Previously my attempt at Advent of code 2020, now stores all my Advent of Code a
 https://adventofcode.com/  
 
 ## Advent of Code 2021
-https://adventofcode.com/2021/
+https://adventofcode.com/2021/  
 Days 1-13
 
 ## Advent of Code 2020
