@@ -40,8 +40,6 @@ def main():
                 continue
             diagonal_adjacents = "".join(get_diagonal_adjacents(
                 word_search, row_index, col_index))
-            if len(diagonal_adjacents) != 4 or not all(char in 'MS' for char in diagonal_adjacents):
-                continue
             if diagonal_adjacents in ["MMSS", "SSMM", "MSMS", "SMSM"]:
                 xmas_count += 1
     print(xmas_count)
